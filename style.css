@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color:#212529;
+    --text-color:#FFF;
+    --color-resultado: #2A282A;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:var(--bg-color);
+    font-family: 'Kodchasan', sans-serif;
+}
+
+.home{
+    background-color: white;
+    max-width: 350px;
+    min-height: 15vh;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    color: #212529;
+    margin: 20px 0;
+}
+.busca {
+    display: flex;
+    width: 300px;
+}
+.busca #searchInput {
+    flex: 1;
+    padding: 10px;
+    outline: none;
+    font-size: 15px;
+    border-radius: 0px;
+    border-bottom:0.5px solid #212529;
+    border-top:0;
+    border-left: 0;
+    border-right: 0;
+}
+.busca button {
+    padding: 10px;
+    font-size: 15px;
+    border: 0;
+    background-color: #ff4d4d;
+    color: #FFF;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-family: 'Kodchasan', sans-serif;
+}
+.busca button:hover {
+    background-color: #cc3d3d;
+}
+
+.resultado {
+    width: 300px;
+    display: none;
+    border: 1px solid #FFF;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: var( --color-resultado);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.titulo {
+    width: 100%;
+    color: var(--text-color);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+}
+
+.info {
+    display: flex;
+    width: 100%;
+}
+.info .temp {
+    flex: 1;
+    text-align: center;
+}
+.info .vento {
+    flex: 1;
+    text-align: center;
+}
+.tempTitulo,
+.ventoTitulo {
+    color: #777;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.tempInfo,
+.ventoInfo {
+    color: var(--text-color);
+    font-size: 30px;
+    font-weight: bold;
+}
+.tempInfo sup {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoInfo span {
+    font-size: 15px;
+    font-weight: normal;
+}
+.ventoArea {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #FFF;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+.ventoPonto {
+    width: 15px;
+    height: 1px;
+    background-color: var(--text-color);
+    transform-origin: left;
+}
+
+.aviso {
+    color: #d62433;
+    padding-top: 20px;
+}
